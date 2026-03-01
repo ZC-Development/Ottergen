@@ -121,19 +121,19 @@ public class MatugenColorsTests
         }
 
         [Test]
-        public void TryParse_NullInput_ReturnsNull() =>
-            Assert.That(RgbColor.TryParse(null), Is.Null);
+        public void TryParse_NullInput_ReturnsFalse() =>
+            Assert.That(RgbColor.TryParse(null, out _), Is.False);
 
         [Test]
-        public void TryParse_InvalidInput_ReturnsNull() =>
-            Assert.That(RgbColor.TryParse("not-a-color"), Is.Null);
+        public void TryParse_InvalidInput_ReturnsFalse() =>
+            Assert.That(RgbColor.TryParse("not-a-color", out _), Is.False);
 
         [Test]
-        public void TryParse_ValidInput_ReturnsColor()
+        public void TryParse_ValidInput_ReturnsTrueAndColor()
         {
-            var c = RgbColor.TryParse("153,153,153");
-            Assert.That(c,         Is.Not.Null);
-            Assert.That(c!.Value.R, Is.EqualTo(153));
+            var success = RgbColor.TryParse("153,153,153", out var c);
+            Assert.That(success, Is.True);
+            Assert.That(c.R, Is.EqualTo(153));
         }
         
         [Test]
