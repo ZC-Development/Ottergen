@@ -12,9 +12,18 @@ public struct RgbColor(int r, int g, int b)
         return new RgbColor(int.Parse(p[0].Trim()), int.Parse(p[1].Trim()), int.Parse(p[2].Trim()));
     }
     
-    public static RgbColor? TryParse(string? raw)
+    public static bool TryParse(string? raw, out RgbColor result)
     {
-        if (raw == null) return null;
-        try { return Parse(raw); } catch { return null; }
+        result = default;
+        if (raw == null) return false;
+        try
+        {
+            result = Parse(raw);
+            return true;
+        }
+        catch
+        {
+            return false;
+        }
     }
 }

@@ -1,0 +1,47 @@
+## [Common]
+.DS_Store
+Thumbs.db
+
+## [Build Artifacts]
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Tt]estResults/
+
+## [Visual Studio / Rider / IDE]
+.idea/
+.vs/
+*.user
+*.userosscache
+*.sln.docstates
+*.sln.DotSettings.user
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+*.mono/
+
+## [NuGet]
+packages/
+*.nuget.props
+*.nuget.targets
+project.lock.json
+project.assets.json
+
+## [Publish]
+publish/
+*.publishproj
+
+## [AOT / Native]
+*.pdb
+*.exe
+*.dll
+*.so
+*.dylib
+*.a
+*.lib
+*.exp
+
+## [Crash Reports]
+*.stackdump
