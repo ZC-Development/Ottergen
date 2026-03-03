@@ -14,7 +14,7 @@
         <PackageProjectUrl>https://github.com/ZC-Development/Ottergen</PackageProjectUrl>
         <RepositoryUrl>https://github.com/ZC-Development/Ottergen</RepositoryUrl>
         <PackageTags>GTK;Qt;Matugen;Colors;Parser;Linux</PackageTags>
-        <PackageLicenseExpression>GPL-3.0</PackageLicenseExpression>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
         <Title>Ottergen</Title>
     </PropertyGroup>
