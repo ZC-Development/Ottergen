@@ -30,3 +30,5 @@ jobs:
       
     - name: Push to NuGet
       run: dotnet nuget push nupkg/*.nupkg --api-key ${{ secrets.nuget }} --source https://api.nuget.org/v3/index.json --skip-duplicate
+      env:
+        NUGET_AUTH_TOKEN: ${{ secrets.nuget }}
