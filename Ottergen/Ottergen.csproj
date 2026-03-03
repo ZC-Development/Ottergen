@@ -5,6 +5,18 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <IsAotCompatible>true</IsAotCompatible>
+        <PackageId>Ottergen</PackageId>
+        <Version>0.1.0</Version>
+        <Company>ZC Development</Company>
+        <Product>Shelly VALPM by ZC Development</Product>
+        <Copyright>2026 ZC Development</Copyright>
+        <Description>Parsers for GTK and Mutagen Colors on Linux.</Description>
+        <PackageProjectUrl>https://github.com/ZC-Development/Ottergen</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/ZC-Development/Ottergen</RepositoryUrl>
+        <PackageTags>GTK;Qt;Matugen;Colors;Parser;Linux</PackageTags>
+        <PackageLicenseExpression>GPL-3.0</PackageLicenseExpression>
+        <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+        <Title>Ottergen</Title>
     </PropertyGroup>
 
 </Project>
