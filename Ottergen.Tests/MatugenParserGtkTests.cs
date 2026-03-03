@@ -48,7 +48,7 @@ public class MatugenParserGtkTests
     [Test]
     public void Parse_ShortHex_ReturnsCorrectColors()
     {
-        const string content = "@define-color borders #123;";
+        const string content = "@define-color borders #112233;";
         var tempFile = Path.GetTempFileName();
         File.WriteAllText(tempFile, content);
         try
